@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Size(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(("Size"), max_length=100)
     def __str__(self):
         return self.title 
     
