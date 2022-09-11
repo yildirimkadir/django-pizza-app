@@ -19,12 +19,8 @@ def order(request):
             topping_1 = form.cleaned_data.get("topping_1")
             topping_2 = form.cleaned_data.get("topping_2")
             return redirect("home")
-        else:
-            form_saved_pk = None
-
     context = {
         'multiple_form': multiple_form,
-        'form_saved_pk': form_saved_pk,
         'form': form,
         
     }    
